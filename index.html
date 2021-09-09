@@ -1,0 +1,762 @@
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-N6M1HTYGP9"></script> -->
+<!-- <script> -->
+<!--   window.dataLayer = window.dataLayer || []; -->
+<!--   function gtag(){dataLayer.push(arguments);} -->
+<!--   gtag('js', new Date()); -->
+
+<!--   gtag('config', 'G-N6M1HTYGP9'); -->
+<!-- </script> -->
+
+
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+<link rel="icon" href="./figures/nvidia.png">
+</head>
+
+
+<!-- Global site tag (gtag.js)
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+ - Google Analytics -->
+ 
+<style type="text/css">
+
+    .topnav {
+      overflow: hidden;
+      background-color: #EEEEEE;
+    }
+
+    .topnav a {
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    body {
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-weight:300;
+        font-size:18px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 1100px;
+    }
+
+    h1 {
+        font-weight:300;
+        margin: 0.4em;
+    }
+
+    p {
+        margin: 0.2em;
+    }
+
+    .disclaimerbox {
+        background-color: #eee;
+        border: 1px solid #eeeeee;
+        border-radius: 10px ;
+        -moz-border-radius: 10px ;
+        -webkit-border-radius: 10px ;
+        padding: 20px;
+    }
+
+    video.header-vid {
+        height: 140px;
+        border: 1px solid black;
+        border-radius: 10px ;
+        -moz-border-radius: 10px ;
+        -webkit-border-radius: 10px ;
+    }
+
+    img.header-img {
+        height: 140px;
+        border: 1px solid black;
+        border-radius: 10px ;
+        -moz-border-radius: 10px ;
+        -webkit-border-radius: 10px ;
+    }
+
+    img.rounded {
+        border: 1px solid #eeeeee;
+        border-radius: 10px ;
+        -moz-border-radius: 10px ;
+        -webkit-border-radius: 10px ;
+    }
+
+    a:link,a:visited
+    {
+        color: #1367a7;
+        text-decoration: none;
+    }
+    a:hover {
+        color: #208799;
+    }
+
+    td.dl-link {
+        height: 160px;
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+        box-shadow:
+                0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+                5px 5px 0 0px #fff, /* The second layer */
+                5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+                10px 10px 0 0px #fff, /* The third layer */
+                10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
+                15px 15px 0 0px #fff, /* The fourth layer */
+                15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
+                20px 20px 0 0px #fff, /* The fifth layer */
+                20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
+                25px 25px 0 0px #fff, /* The fifth layer */
+                25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
+        margin-left: 10px;
+        margin-right: 45px;
+    }
+
+
+    .layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+        box-shadow:
+                0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+                5px 5px 0 0px #fff, /* The second layer */
+                5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+                10px 10px 0 0px #fff, /* The third layer */
+                10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
+        margin-top: 5px;
+        margin-left: 10px;
+        margin-right: 30px;
+        margin-bottom: 5px;
+    }
+
+    .vert-cent {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    hr
+    {
+        margin: 0;
+        border: 0;
+        height: 1.5px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    }
+	
+	.rotate {
+		/* FF3.5+ */
+		-moz-transform: rotate(-90.0deg);
+		/* Opera 10.5 */
+		-o-transform: rotate(-90.0deg);
+		/* Saf3.1+, Chrome */
+		-webkit-transform: rotate(-90.0deg);
+		/* IE6,IE7 */
+		filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=0.083);
+		/* IE8 */
+		-ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083)";
+		/* Standard */
+		transform: rotate(-90.0deg);
+	}
+	
+	c {
+	   white-space: nowrap;
+       writing-mode: tb-rl;
+       transform: rotate(-180.0deg);
+	}
+
+</style>
+
+<html>
+
+    <div class="topnav" id="myTopnav">
+      <a href=https://www.nvidia.com/><img width="12%" src="nvidia.svg"></a>
+      <a href=https://nv-tlabs.github.io/ ><strong>Toronto AI Lab</strong></a>
+    </div>
+  <head>
+        <title>Physics Human Motion</title>
+        <meta property="og:title" content="nlos" />
+  </head>
+
+  <body>
+    <br>
+    <center>
+    <span style="font-size:42px">Physics-based Human Motion Estimation and Synthesis from Videos</span>
+    </center>
+
+    <br>
+      <table align=center width=900px>
+       <tr>
+
+        <td align=center width=120px>
+        <center>
+        <span style="font-size:20px"><a href="">Kevin Xie<sup> 1,2,3</sup></a></span>
+        </center>
+        </td>
+
+        <td align=center width=120px>
+        <center>
+        <span style="font-size:20px"><a href="">Tingwu Wang<sup> 1,2,3</sup></a></span>
+        </center>
+        </td>
+
+        <td align=center width=120px>
+        <center>
+        <span style="font-size:20px"><a href="">Umar Iqbal<sup> 1</sup></a></span>
+        </center>
+        </td>
+
+         <td align=center width=120px>
+        <center>
+        <span style="font-size:20px"><a href="">Yunrong Guo<sup> 1</sup></a></span>
+        </center>
+        </td>
+       </tr>
+      </table>
+
+      <table align=center width=700px>
+       <tr>
+        
+
+        <td align=center width=120px>
+        <center>
+        <span style="font-size:20px"><a href="http://www.cs.utoronto.ca/~fidler/">Sanja Fidler<sup> 1,2,3</sup></a></span>
+        </center>
+        </td>
+
+         <td align=center width=120px>
+        <center>
+        <span style="font-size:20px"><a href="">Florian Shkurti<sup> 2,3</sup></a></span>
+        </center>
+        </td>
+
+     </tr>
+    </table>
+<br>
+    <table align=center width=900px>
+       <tr>
+        <td align=center width=100px>
+        <center>
+        <span style="font-size:20px"><sup>1</sup>NVIDIA</span>
+        </center>
+        </td>
+        <td align=center width=100px>
+            <center>
+            <span style="font-size:20px"><sup>2</sup>University of Toronto</span>
+            </center>
+        </td>
+        <td align=center width=100px>
+            <center>
+            <span style="font-size:20px"><sup>3</sup>Vector Institute</span>
+            </center>
+        </td>
+     </tr>
+    </table>
+
+       <table align=center width=700px>
+       <tr>
+        <td align=center width=100px>
+        <center>
+        <span style="font-size:20px;color:red"> ICCV 2021</span>
+        </center>
+        </td>
+     </tr>
+    </table>
+    
+	<br>
+
+			<br>
+			<br>
+            <table align=center width=1000px>
+                <tr>
+                    <td width=1000px>
+                      <center>
+                          <img src = "./figures/teaser_1.png" width="1000px" ></img><br>
+                    </center>
+                    </td>
+                    <!-- <td width=450px>
+                        <center>
+                            <iframe width="448" height="280" src="https://www.youtube.com/embed/evGqMnL4P3E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>                        
+                        </center>
+                    </td> -->
+                </tr>
+            </table>
+            <table align=center width=900px></table>
+                <tr>
+                    <td width=600px>
+                    <br>  
+                    <center>
+                          <span style="font-size:14px"><i>We propose a trajectory optimization formulation using soft contact costs for recovering physically corrected motions from frame by frame pose estimation which can then be used to train motion synthesis models. </i>
+                    </center>
+                    </td>
+                </tr>
+                <tr>
+                    <td width=600px>
+                        <br>
+                        <p align="justify" style="font-size: 18px">
+                        Human motion synthesis is an important problem with applications in graphics, gaming and simulation environments for robotics. Existing methods require accurate motion capture data for training, which is costly to obtain. Instead, we propose a framework for training generative models of physically plausible human motion directly from monocular RGB videos, which are much more widely available.
+At the core of our method is a novel optimization formulation that corrects imperfect image-based pose estimations by enforcing physics constraints and reasons about contacts in a differentiable way.
+This optimization yields corrected 3D poses and motions, as well as their corresponding contact forces. Results show that our physically-corrected motions significantly outperform prior work on pose estimation. 
+We can then use these to train a generative model to synthesize future motion.
+Samples from the generative model can optionally be further refined with the same physics correction optimization. 
+We demonstrate both qualitatively and quantitatively significantly improved motion estimation, synthesis quality and physical plausibility achieved by our method on the large scale Human3.6m dataset~\cite{h36m_pami} as compared to prior kinematic and physics-based methods. By enabling learning of motion synthesis from video, our method paves the way for large-scale, realistic and diverse motion synthesis.
+                        </p>
+                    </td>
+                </tr>
+            </table>
+
+         <br>
+         <hr>
+         <!-- <table align=center width=550px> -->
+            <table align=center width=700>
+             <center><h1>Paper</h1></center>
+                <tr>
+                  <td><a href="https://arxiv.org/"><img style="height:180px; border: solid; border-radius:30px;" src="./files/paper_small.png"/></a></td>
+                  <td><span style="font-size:18px"> Kevin Xie, Tingwu Wang, Umar Iqbal, <br> Yunrong Guo, Sanja Fidler, Florian Shkurti<br><br>
+                Physics-based Human Motion Estimation and Synthesis from Videos <br>
+                ICCV 2021
+                    </td>
+              </tr>
+            </table>
+            <br>
+
+            <table align=center width=700px>
+              <tr>
+					<td>  
+                    <span style="font-size:18px"><center>
+                      <a href="https://arxiv.org/abs/">[Paper]</a>
+                    </center></td>
+					
+					<td>  
+                    <span style="font-size:18px"><center>
+                      <a href="./files/supplement.zip">[Supplement]</a>
+                    </center></td>
+
+                  <!-- <td><span style="font-size:18px"><center> -->
+                  <!--     <a href="./bib.html">[Bibtex]</a> -->
+                  <!--   </center></td> -->
+                  <!-- <td><span style="font-size:18px"><center> -->
+                  <!--     <a href="https://github.com/nv-tlabs/DefTet">[Code coming soon!]</a> -->
+                  <!--   </center></td> -->
+                  
+                  <!-- <td><span style="font-size:18px"><center>
+                      <a href="https://www.youtube.com/watch?v=evGqMnL4P3E">[Video]</a>
+                    </center></td> -->
+				
+				 <!--  <td><span style="font-size:18px"><center>
+                      [Code]</a>
+                    </center></td> -->
+
+              </tr>
+			</table>
+            
+			<br>
+<!-- 			<table align=center width=700px>
+			  <tr>
+                  <td colspan="5" style="font-size: 14px">
+                  <center>
+                      <i> Please address correspondence regarding this paper to <a href="mailto:sfidler@nvidia.com">Sanja Fidler</a>.</i>
+                  </center>
+                  </td>
+              </tr>
+			</table> -->
+		
+		
+		<br>
+        <hr>
+
+          <center><h1>Overview</h1></center>
+		  
+		  <br>
+      <br>
+
+      <table align=center width=900px>
+       
+       </table>
+       <br>
+
+
+       <table align=center width=900px>
+      
+      <tr>
+      <center>
+        <td colspan='2'>
+                    <center>
+
+                <iframe src="https://drive.google.com/file/d/1tdkN64wi1QEEx5EzakYT96uF376S-dWK/preview" width="1080" height="600" allow="autoplay"></iframe>
+                <!-- <video width="1080" height="600" controls> -->
+                <!-- <source src="vids/full_vid3_voiceover_fix.mp4" type="video/mp4"> -->
+                  <!-- <source src="movie.ogg" type="video/ogg"> -->
+                <!-- Your browser does not support the video tag. -->
+                <!-- </video> --> 
+                    </center>
+                </td>
+       
+
+      </center>
+      </tr>
+      </table>
+
+
+       <br>
+       <br>
+
+       <table align=center width=900px>
+       
+       <tr>
+      
+      <td>
+            <p  align="justify" >
+        
+                    <span style="font-size:25px">
+                    <b>More Recovered Motions Combined</b>
+          </span> 
+          
+          <br>
+          </p>       
+      </td>
+      
+      </tr>
+      
+       </table>
+       <br>
+
+       <table align=center width=900px>
+      
+      <tr>
+      <center>
+        <td colspan='2'>
+                    <center>
+                <iframe src="https://drive.google.com/file/d/1mQdxj_h8KYo-0cI4UTsTO9y6TWOQynx8/preview" width="1080" height="600" allow="autoplay"></iframe>
+                <!-- <video width="1080" height="600" controls> -->
+                <!--   <source src="vids/Crowd56_1000_comp_30fps.mp4" type="video/mp4"> -->
+
+                <!-- Your browser does not support the video tag. -->
+                <!-- </video> --> 
+                    </center>
+                </td>
+       
+
+      </center>
+      </tr>
+      </table>
+
+
+       <table align=center width=900px>
+       
+       <tr>
+      
+      <td>
+          <hr style="height:12pt; visibility:hidden;" /> 
+           
+           <p  align="justify" >
+                          <span style="font-size:15px"> 
+             We recover high quality motions from video inputs only. Above we compose a sample of motions from the validation set of Human3.6m recovered using our method.
+                    </span> 
+                    </p>          
+      </td>
+      
+      </tr>
+      
+       </table>
+
+      <br>
+      <br>
+       <table align=center width=900px>
+       
+       <tr>
+      
+      <td>
+            <p  align="justify" >
+        
+                    <span style="font-size:25px">
+                    <b>More Motions from in the Wild Videos</b>
+          </span> 
+          
+          <br>
+          </p>       
+      </td>
+      
+      </tr>
+      
+       </table>
+       <br>
+
+       <table align=center width=900px>
+      
+      <tr>
+      <center>
+        <td colspan='2'>
+                    <center>
+                        <iframe src="https://drive.google.com/file/d/1L42k40ojApuLYxjuT5QIgxXfcwsoHnW6/preview" width="450" height="342" allow="autoplay"></iframe>
+                        <!-- <a href="./gif/freekick.gif"><img src="./gif/freekick.gif" alt="Computer Man" style="width:360px"></a><br> -->
+                    </center>
+                </td>
+
+        <td colspan='2'>
+                    <center>
+
+                        <!-- <iframe src="https://drive.google.com/file/d/1fN0Pp3QEbhF6StAEU65Es34Xr7pO7YE-/preview" width="360" height="480" allow="autoplay"></iframe> -->
+                        <iframe src="https://drive.google.com/file/d/1fN0Pp3QEbhF6StAEU65Es34Xr7pO7YE-/preview" width="450" height="342" allow="autoplay"></iframe>
+                        <!-- <a href="./gif/tennis.gif"><img src="./gif/sprint.gif" alt="Computer Man" style="width:360px"></a><br> -->
+                    </center>
+                </td>
+
+
+                
+      </center>
+      </tr>
+
+
+      </table>
+
+       <table align=center width=900px>
+       
+       <tr>
+      
+      <td>
+          <hr style="height:12pt; visibility:hidden;" /> 
+           
+           <p  align="justify" >
+                          <span style="font-size:15px"> 
+                        For in-the-wild motions, we do not assume access to ground truth camera parameters. Instead we optimize the parameters of the ground plane jointly with the motion. They are initialized such that the initial character motion is on average standing upright with respect to the ground plane and gravity assumed to be perpendicular.
+                    </span> 
+                    </p>          
+      </td>
+      
+      </tr>
+      
+       </table>
+
+       <table align=center width=900px>
+       
+       <tr>
+     
+      <td>
+            <p  align="justify" >
+        
+                    <span style="font-size:18px">
+          <!-- <hr style="height:20pt; visibility:hidden;" /> <!–– Spacing --> 
+                    <!-- <b>Optimization Procedure</b> -->
+          </span> 
+          
+          <br>
+          </p>       
+      </td>
+      
+      </tr>
+      
+       </table>
+       <br>
+
+
+       <table align=center width=900px>
+      
+      <tr>
+      <center>
+        <td colspan='2'>
+                    
+                    <center>
+                        <!-- <a href="./figures/bear_opt.mp4"><video width="425" controls autoplay loop muted><source src="./figures/walk_opt.mp4" type="video/mp4"></video></a><br> -->
+                    </center>
+                </td>
+                <td colspan='2'>
+                    <center>
+                        <!-- <a href="./figures/koala_opt.mp4"><video width="425" controls autoplay loop muted><source src="./figures/photo_opt.mp4" type="video/mp4"></video></a><br> -->
+                    </center>
+                </td>
+
+      </center>
+      </tr>
+      </table>
+
+
+
+        <!--
+      <table align=center width=900px>
+       
+       <tr>
+      
+      <td>
+          <hr style="height:12pt; visibility:hidden;" /> 
+           
+           <p  align="justify" >
+                          <span style="font-size:15px"> 
+                    We show the motion as it is adjusted during optimization. For a 40 second video clip our optimization runs for 750 iterations and equates to about 4 minutes.
+                    </span> 
+                    </p>          
+      </td>
+      
+      </tr>
+      
+       </table>
+       <table align=right width=900px>
+        -->
+       
+       <tr>
+      
+      </tr>
+      
+       </table>
+
+
+       <br>
+       <br>
+       <br>
+
+       <table align=center width=900px>
+       
+       <tr>
+      
+      <td>
+            <p  align="justify" >
+        
+                    <span style="font-size:25px">
+                    <b>More Motion Comparisons</b>
+          </span> 
+          
+          <br>
+          </p>       
+      </td>
+      
+      </tr>
+      
+       </table>
+       <br>
+
+       <table align=center width=900px>
+      <tr>
+      <center>
+
+                <p> Note below motion is shown from the side view camera (which is not the camera for the input video). </p>
+            <iframe src="https://drive.google.com/file/d/1NFbOBz08HKyhe-O0dZaif8weCib128VU/preview" width="640" height="640" allow="autoplay"></iframe>
+            <!-- 
+            <video width="1000" height="1000" controls>
+
+              <source src="vids/S11_photo1_overcomp0000-1546.mp4" type="video/mp4">
+              <source src="movie.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+            </video>  -->
+            <br>
+
+      </center>
+      </tr>
+
+      <tr>
+      <center>
+
+            <p> Motion Comparison Retargetted to Mesh </p>
+            <iframe src="https://drive.google.com/file/d/1MrQTNIgOpeHlwS3IXcnZxgD5AT4K8Ygv/preview" width="720" height="400" allow="autoplay"></iframe>
+            <!-- <video width="720" height="400" controls> -->
+              <!-- <source src="vids/S9Wait_p2_comp.mp4" type="video/mp4"> -->
+              <!-- <source src="movie.ogg" type="video/ogg"> -->
+            <!-- Your browser does not support the video tag. -->
+            <!-- </video> --> 
+            <br>
+
+      </center>
+      </tr>
+
+      <tr>
+      <center>
+
+        <p> Physics-corrected Motion on Mesh </p>
+            <iframe src="https://drive.google.com/file/d/1A9R2JpXeKPlHKiasyjNP19u0w5VP5vsM/preview" width="720" height="400" allow="autoplay"></iframe>
+            <!--
+            <video width="720" height="400" controls>
+              <source src="vids/S9WalkDog_p2_omp.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video> 
+            -->
+            <br>
+
+      </center>
+      </tr>
+      </table>
+
+       <table align=center width=900px>
+       
+       <tr>
+      
+      <td>
+            <p  align="justify" >
+        
+                    <span style="font-size:25px">
+                    <b>Failure Cases</b>
+          </span> 
+          
+          <br>
+          </p>       
+      </td>
+      
+      </tr>
+
+      <center>
+          <tr>
+        <td colspan='2'>
+                    <center>
+
+                        <img src="./figures/fail_img1.png" alt="Computer Man" style="height:360px"><br>
+                        <!-- <a href="figures/Compressed_103d6951a3ed3c0a203f35d9b3b48203_whole_shape_160_.jpg"><img src = "figures/Compressed_103d6951a3ed3c0a203f35d9b3b48203_whole_shape_160_.jpg" width="900px"></img></a><br> -->
+                    </center>
+                </td>
+
+        <td colspan='2'>
+                    <center>
+
+                        <img src="./figures/fail_img2.png" alt="Computer Man" style="height:360px"><br>
+                        <!-- <a href="./gif/tennis.gif"><img src="./gif/sprint.gif" alt="Computer Man" style="width:360px"></a><br> -->
+                        <!-- <a href="figures/Compressed_103d6951a3ed3c0a203f35d9b3b48203_whole_shape_160_.jpg"><img src = "figures/Compressed_103d6951a3ed3c0a203f35d9b3b48203_whole_shape_160_.jpg" width="900px"></img></a><br> -->
+                    </center>
+                </td>
+
+
+                
+          </tr>
+
+      </center>
+      
+       </table>
+              <p> We show frames selected from the highest error ones. Failure cases are generally due to inaccuracies in the underlying pose estimator due to occlusion or depth ambiguity. The motion stays physically correct. </p>
+
+
+
+
+       
+
+       
+
+		  
+		   <br>
+		   <br>
+		  
+		  
+          <hr>
+		  
+      
+      <tr>
+      </tr>
+
+
+      </table>
+		  <table align=center width=900px>
+			  <tr>
+                  <td colspan="5" style="font-size: 14px">
+                  <center>
+                      We thank <a href="http://www.cs.toronto.edu/~davidj/">David Acuna</a> for his website template.
+                  </center>
+                  </td>
+              </tr>
+			</table>
+
+       <table align=center width=900px>
+			
+         
+</body>
+</html>
